@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+body {
+  margin: 20px;
+  font-size: 14px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #555; }
+
+.iti__hide {
+  display: none; }
+
+pre {
+  margin: 0 !important;
+  display: inline-block; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  background: none; }
+
+input, button {
+  height: 35px;
+  margin: 0;
+  width:90%;
+}
+  input[disabled], button[disabled] {
+    background-color: #eee; }
+ 
+input, select {
+  width:100%;
+  padding:10px 0;
+  margin: 20px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom:3px #03A9F4 solid;
+  outline:none;
+  background: transparent; }
+
+::-webkit-input-placeholder {
+  color: #BBB;
+  font-size: 15px; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #BBB;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #BBB; }
+
+button {
+  color: #FFF;
+  background-color: #428BCA;
+  border: 1px solid #357EBD; }
+  button:hover {
+    background-color: #3276B1;
+    border-color: #285E8E;
+    cursor: pointer; }
+
+#result {
+  margin-bottom: 100px; }
+  @media only screen and (max-width: 600px) {
+    ::-webkit-input-placeholder {
+      color: #BBB;
+      font-size: 9px; }
+    
+    ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #BBB;
+      opacity: 1;
+      font-size: 9px; }
+    
+    :-ms-input-placeholder {
+      color: #BBB;
+      font-size: 9px; }
+    
+  }
+  @media only screen and (max-width: 900px) {
+    ::-webkit-input-placeholder {
+      color: #BBB;
+      font-size: 10px; }
+    
+    ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #BBB;
+      opacity: 1;
+      font-size: 10px; }
+    
+    :-ms-input-placeholder {
+      color: #BBB;
+      font-size: 10px; }
+    
+  }

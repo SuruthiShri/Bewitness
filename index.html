@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png" type="image/gif">
+    <link rel="stylesheet" href="css/style_register.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <link rel="stylesheet" href="css/demo.css">
+
+    <title>BeWitness &#8211; Let&#039;s Make the World a Safe Place</title>
+    
+</head>
+<body>
+    <!-- div image to display image when screen size is greater than 600 -->
+    <div class="screen">
+        <div class="sideimage">
+            <img src="img/team6.svg" alt="sideimage">
+        </div>
+      <!-- div card to get user input -->
+        <div class="card">
+            <div class="heading">
+                <h5 class="Welcome">Welcome To</h5>
+                <img class="Bewitness_logo" src="img/Artboard-1.png" alt="icon">
+            </div>
+            <form class="user_input" action="#">
+            
+                <input type="text" id="user_Name" onblur=" return usernameValidate()" placeholder="User Name" name="user_Name" required>
+                <br><span class="userError" id="user_error"></span><br>
+                <input type="text" id="user_Email" onblur="return emailValidate()" placeholder="Email" name="user_Email" required>
+                
+                <br><span id="email_error"></span><br>
+                    <div class="PhoneNumber">
+                        <input id="phone" placeholder="Mobile number 1" onblur="mobileNumberOne()" name="phoneNumber_1" type="tel" required>
+                        <input id="phone2" placeholder="Mobile number 2" onblur="mobileNumberTwo()" name="phoneNumber_2" type="tel">
+                        <br>
+                        <span id="valid-msg" class="iti__hide">✓ Valid</span>
+                        <span id="error-msg" class="hide"></span>
+                        <br>
+                    
+                            <span id="valid-msg2" class="iti__hide">✓ Valid</span>
+                            <span id="error-msg2" class="hide"></span>
+                        <br>
+                        <input id="landline" class="Landline" name="landlineNumber" placeholder="Landline number" onchange="phonenumber()" type="tel">
+                        <div class="ErrorPhone3">
+                        <span id="error-msg3" class="hide"></span>
+                        </div>
+                    
+                        
+                    </div>
+              <div class="address">
+                    <input type="text" name="adress_Line1" placeholder="Address Line 1" required>
+                    <br>
+                    <input type="text" name="adress_Line2" placeholder="Address Line 2" required>
+                    <div class="city_zip">
+                        <input type="text" name="cityName" id="cityName" onchange="validateCityName()" class="city" placeholder="City" required>
+                    
+                        <input type="text" name="zipCode" id="zipCode" onchange="validZip()" class="zipcode" placeholder="zipcode" required>
+                    
+                        <br> <br><span id="cityError"></span>
+                        <span  id="zipError"></span><br>
+                     </div>
+                    <select id="country" name="country"class="country" onclick="document.getElementById('country').style.color='black';" name ="country" required></select>
+                    <select name ="state" name="state" class="state" onclick="document.getElementById('state').style.color='black';" id ="state" required></select>
+                </div>
+              <button type="submit" class="register" name="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/intlTelInput.js"></script>
+    <script src="js/register.js"></script>
+    <script type= "text/javascript" src = "js/countries.js"></script>
+    <script language="javascript">
+        populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
+    </script>
+</body>
+</html>

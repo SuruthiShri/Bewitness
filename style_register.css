@@ -1,0 +1,300 @@
+body{
+    background:#FFFFFF !important;
+    color:#555555 !important;
+    font-family: Poppins !important;    
+    font-size: 16px !important;
+    left:0;
+  margin:0;
+  right:0;
+  height: 100vh;
+}
+.screen
+{
+  left:0;
+  margin:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.sideimage
+{
+  margin: 30px auto;
+  height:700px;
+  width:40%;
+  float:left;
+  position: relative;
+}
+.sideimage >img{
+  width:90%;
+  height:100%;
+}
+.card
+{
+   
+    margin: 20px auto;
+    margin-right: 3%;
+    float: right;
+    width: 50%;
+  
+    border-radius: 20px;
+    box-shadow:3px 0px 10px 7px rgb(156 151 151 / 25%)
+   
+}
+.heading,.user_input,.card
+{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.Welcome
+{
+    font-size:20px;
+}
+.Bewitness_logo
+{
+    margin-top:-3%;
+}
+
+.address
+{
+   
+    width:90%;
+    display: inline-block;
+    margin-top: 2%;
+    color: #BBB;
+   
+}
+#zipError
+{
+  margin-top:-2%;
+  margin-right:15%;
+  float:right;
+}
+.userError
+{
+ padding: 40px;
+ color:red;
+}
+#cityError
+{
+  margin-top:-2%;
+  float:left;
+  margin-left:12%;
+}
+#email_error,#zipError,#cityError
+{
+  color:red;
+}
+select
+{
+  color: #BBB;
+}
+.address >input{
+  width:90%;
+  margin-top:0%;
+  padding:10px;
+}
+
+.city_zip
+{
+  width:100%;
+  display: inline-block;
+}
+.country,.city{
+  margin-top:0%;
+  padding:10px;
+  width:40%;
+  margin-left:5%;
+  float:left;
+}
+.state,.zipcode{
+  margin-top:0%;
+  padding:10px;
+  width:40%;
+  margin-right:5%;
+  float:right;
+}
+.user_input
+{
+    width:90%;
+    height:90%;
+    margin-left:5%;
+}
+
+.user_input >input
+{
+    width:80%;
+    padding-left:10px;
+    margin-top:2%;
+    margin-bottom:0%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 2px;
+    border-bottom:3px #03A9F4 solid;
+    outline:none;
+    background: transparent;
+}
+.register
+{
+  background-color: #03A9F4;
+  width:25%;
+  height:50px;
+  border:none;
+  font-size:16px;
+  border-radius:25px;
+  padding:10px;
+  margin:10px;
+}
+.register:hover
+{
+  background-color: #0288D1;
+}
+
+.user_input >input::placeholder
+{
+    font-size: 15px;
+}
+.PhoneNumber
+{
+  width:100%;
+  margin-top:2%;
+  display: inline-block;
+}
+.iti--allow-dropdown 
+{
+  width:40%;
+  padding-right:10px;
+}
+  
+body {
+    margin: 20px;
+  }
+  form {
+    width: 300px;
+  }
+  
+  .intl-tel-input {
+    display: table-cell;
+  }
+  .intl-tel-input .selected-flag {
+    z-index: 4;
+  }
+  .intl-tel-input .country-list {
+    z-index: 5;
+  }
+  .input-group .intl-tel-input .form-control {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 0;
+  }
+  .select::after {
+    color:black;
+  }
+ #error-msg
+  {
+    float:left;
+    margin-top:1%;
+    padding:0px;
+    margin-left:20%;
+    color:red;
+  }
+ select option
+ {
+   color:black;
+ }
+ .Error{
+border-bottom:1px solid red;
+ }
+  #error-msg2
+  {
+    float:right;
+    margin:-2%;
+    padding:0px;
+    color:red;
+    margin-right:27%;
+  }
+  .ErrorPhone3
+  {
+    color:red;
+    margin-top:-10px;
+  }
+  .Landline
+  {
+    width: 80%;
+    padding:10px;
+    margin-top:-20%;
+  }
+  @media only screen and (max-width: 600px) {
+    
+    .Bewitness_logo
+{
+   width:60%;
+}
+.sideimage
+{
+  display: none;
+}
+.card
+{
+   
+   
+    width: 90%;
+    height:700px;
+   align-items: center;
+   
+   
+}
+
+.screen
+{
+  font-size: 8px;
+}
+
+  .user_input >input::placeholder
+  {
+      font-size: 13px;
+  }
+  }
+  @media only screen and (max-width: 900px) {
+    
+    .Bewitness_logo
+{
+   width:60%;
+}
+.sideimage >img{
+  width:100%; 
+  height:500px;
+}
+
+.screen
+{
+  font-size: 12px;
+}
+
+  .user_input >input::placeholder
+  {
+      font-size: 10px;
+  }
+  }
+  @media only screen and (max-width: 850px) {
+    .user_input >input::placeholder
+  {
+      font-size: 8px;
+  }
+  .register
+  {
+    background-color: #03A9F4;
+    width:50%;
+    height:40px;
+    font-size:12px;
+    border-radius:25px;
+    
+  } 
+  .select{
+    font-size:10px;
+    align-items: baseline;
+  } 
+  }
